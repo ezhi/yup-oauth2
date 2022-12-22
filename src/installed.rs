@@ -38,7 +38,7 @@ where
     T: AsRef<str>,
 {
     let mut url = String::new();
-    let scopes_string = crate::helper::join(scopes, " ");
+    let scopes_string = crate::helper::join(scopes, ",");
 
     url.push_str(auth_uri);
 
